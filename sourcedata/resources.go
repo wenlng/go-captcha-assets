@@ -10,15 +10,12 @@ import (
 )
 
 type GraphImage struct {
-	// 遮盖图片
 	OverlayImage image.Image
-	// 背影图片
-	ShadowImage image.Image
-	// 遮罩图片
-	MaskImage image.Image
+	ShadowImage  image.Image
+	MaskImage    image.Image
 }
 
-// ResourcesFile 源始文件资源
+// ResourcesFile .
 type ResourcesFile struct {
 }
 
@@ -46,7 +43,6 @@ func (sf *ResourcesFile) GetFonts() (fonts []*truetype.Font, err error) {
 }
 
 func (sf *ResourcesFile) GetImages() ([]image.Image, error) {
-	// 背景图
 	var images []image.Image
 	var err error
 	for i := 1; i <= 5; i++ {
@@ -62,7 +58,6 @@ func (sf *ResourcesFile) GetImages() ([]image.Image, error) {
 }
 
 func (sf *ResourcesFile) GetThumbImages() ([]image.Image, error) {
-	// 背景图
 	var images []image.Image
 	var err error
 	for i := 1; i <= 5; i++ {

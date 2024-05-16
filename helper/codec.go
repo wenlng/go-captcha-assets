@@ -9,7 +9,7 @@ import (
 	"image/png"
 )
 
-// EncodePNGToByte 图片编码二进制，PNG格式
+// EncodePNGToByte .
 func EncodePNGToByte(img image.Image) (ret []byte) {
 	var buf bytes.Buffer
 	if err := png.Encode(&buf, img); err != nil {
@@ -20,7 +20,7 @@ func EncodePNGToByte(img image.Image) (ret []byte) {
 	return
 }
 
-// EncodeJPEGToByte 图片编码二进制，IMAGE格式
+// EncodeJPEGToByte .
 func EncodeJPEGToByte(img image.Image, quality int) (ret []byte) {
 	var buf bytes.Buffer
 	if err := jpeg.Encode(&buf, img, &jpeg.Options{Quality: quality}); err != nil {
@@ -31,7 +31,7 @@ func EncodeJPEGToByte(img image.Image, quality int) (ret []byte) {
 	return
 }
 
-// DecodeByteToJpeg 字节编码图片
+// DecodeByteToJpeg .
 func DecodeByteToJpeg(b []byte) (img image.Image, err error) {
 	var buf bytes.Buffer
 	buf.Write(b)
@@ -40,7 +40,7 @@ func DecodeByteToJpeg(b []byte) (img image.Image, err error) {
 	return
 }
 
-// DecodeByteToPng 字节编码图片
+// DecodeByteToPng .
 func DecodeByteToPng(b []byte) (img image.Image, err error) {
 	var buf bytes.Buffer
 	buf.Write(b)
@@ -49,12 +49,12 @@ func DecodeByteToPng(b []byte) (img image.Image, err error) {
 	return
 }
 
-// EncodePNGToBase64 base64编码
+// EncodePNGToBase64 .
 func EncodePNGToBase64(img image.Image) string {
 	return fmt.Sprintf("data:%s;base64,%s", "image/png", base64.StdEncoding.EncodeToString(EncodePNGToByte(img)))
 }
 
-// EncodeJPEGToBase64 base64编码
+// EncodeJPEGToBase64 .
 func EncodeJPEGToBase64(img image.Image, quality int) string {
 	return fmt.Sprintf("data:%s;base64,%s", "image/jpeg", base64.StdEncoding.EncodeToString(EncodeJPEGToByte(img, quality)))
 }

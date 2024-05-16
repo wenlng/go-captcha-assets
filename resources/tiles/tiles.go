@@ -9,12 +9,9 @@ import (
 )
 
 type GraphImage struct {
-	// 遮盖图片
 	OverlayImage image.Image
-	// 背影图片
-	ShadowImage image.Image
-	// 遮罩图片
-	MaskImage image.Image
+	ShadowImage  image.Image
+	MaskImage    image.Image
 }
 
 func GetTiles() ([]*GraphImage, error) {
