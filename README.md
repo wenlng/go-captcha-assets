@@ -46,7 +46,8 @@ func Demo() {
 
 ### Image Assets
 ```go
-import "github.com/wenlng/go-captcha-assets/resources/images"
+//import "github.com/wenlng/go-captcha-assets/resources/images"
+import "github.com/wenlng/go-captcha-assets/resources/images_v2"
 
 func Demo() {
     imgs, err := images.GetImages()
