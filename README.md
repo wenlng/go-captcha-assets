@@ -1,5 +1,8 @@
-# Captcha Assets
+# Golang Assets File of Captcha
 Go Captcha presets some default embedded resources and stores them in the Go file format. In addition, you can also configure the captcha according to your own needs.
+
+Source Resources File: https://github.com/wenlng/go-captcha-resources
+
 
 ## Install
 ```shell
