@@ -30,17 +30,9 @@ func Demo() {
 ### Font Assets
 ```go
 import "github.com/wenlng/go-captcha-assets/resources/fonts/fzshengsksjw"
-import "github.com/wenlng/go-captcha-assets/resources/fonts/yrdzst"
 
 func Demo() {
     fonts, err := fzshengsksjw.GetFont()
-    if err != nil {
-        log.Fatalln(err)
-    }
-    
-    // OR
-    
-    fonts, err := yrdzst.GetFont()
     if err != nil {
         log.Fatalln(err)
     }
