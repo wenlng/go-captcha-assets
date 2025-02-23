@@ -4,6 +4,9 @@ import (
 	"image"
 
 	assets_1 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_1"
+	assets_10 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_10"
+	assets_11 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_11"
+	assets_12 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_12"
 	assets_2 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_2"
 	assets_3 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_3"
 	assets_4 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_4"
@@ -11,6 +14,7 @@ import (
 	assets_6 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_6"
 	assets_7 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_7"
 	assets_8 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_8"
+	assets_9 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_9"
 	"github.com/wenlng/go-captcha-assets/helper"
 )
 
@@ -99,6 +103,50 @@ func GetImages() ([]image.Image, error) {
 
 	//
 	asset, err = assets_8.Asset("sourcedata/images/image-v2-8/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_9.Asset("sourcedata/images/image-v2-9/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_10.Asset("sourcedata/images/image-v2-10/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_11.Asset("sourcedata/images/image-v2-11/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_12.Asset("sourcedata/images/image-v2-12/image.jpg")
 	if err != nil {
 		return images, err
 	}
