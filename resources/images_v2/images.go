@@ -10,6 +10,7 @@ import (
 	assets_13 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_13"
 	assets_14 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_14"
 	assets_15 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_15"
+	assets_16 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_16"
 	assets_2 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_2"
 	assets_3 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_3"
 	assets_4 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_4"
@@ -183,6 +184,17 @@ func GetImages() ([]image.Image, error) {
 
 	//
 	asset, err = assets_15.Asset("sourcedata/images/image-v2-15/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_16.Asset("sourcedata/images/image-v2-16/image.jpg")
 	if err != nil {
 		return images, err
 	}
