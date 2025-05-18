@@ -15,3 +15,24 @@ var alphaChars = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
 func GetAlphaChars() []string {
 	return strings.Split(alphaChars, "")
 }
+
+// GetMixinAlphaChars 数字+字母组合(双组合)
+func GetMixinAlphaChars() []string {
+	var ret = make([]string, 0)
+	letterArr := strings.Split("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "")
+	numArr := strings.Split("0123456789", "")
+
+	for _, s := range letterArr {
+		for _, n := range numArr {
+			ret = append(ret, s+n)
+		}
+	}
+
+	for _, s := range numArr {
+		for _, n := range letterArr {
+			ret = append(ret, s+n)
+		}
+	}
+
+	return ret
+}

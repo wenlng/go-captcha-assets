@@ -1,0 +1,208 @@
+package imagesv2
+
+import (
+	"image"
+
+	assets_1 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_1"
+	assets_10 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_10"
+	assets_11 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_11"
+	assets_12 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_12"
+	assets_13 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_13"
+	assets_14 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_14"
+	assets_15 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_15"
+	assets_16 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_16"
+	assets_2 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_2"
+	assets_3 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_3"
+	assets_4 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_4"
+	assets_5 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_5"
+	assets_6 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_6"
+	assets_7 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_7"
+	assets_8 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_8"
+	assets_9 "github.com/wenlng/go-captcha-assets/bindata/images/image_v2_9"
+	"github.com/wenlng/go-captcha-assets/helper"
+)
+
+func GetImages() ([]image.Image, error) {
+	var images []image.Image
+	var asset []byte
+	var img image.Image
+	var err error
+
+	//
+	asset, err = assets_1.Asset("sourcedata/images/image-v2-1/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_2.Asset("sourcedata/images/image-v2-2/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_3.Asset("sourcedata/images/image-v2-3/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_4.Asset("sourcedata/images/image-v2-4/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_5.Asset("sourcedata/images/image-v2-5/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_6.Asset("sourcedata/images/image-v2-6/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_7.Asset("sourcedata/images/image-v2-7/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_8.Asset("sourcedata/images/image-v2-8/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_9.Asset("sourcedata/images/image-v2-9/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_10.Asset("sourcedata/images/image-v2-10/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_11.Asset("sourcedata/images/image-v2-11/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_12.Asset("sourcedata/images/image-v2-12/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_13.Asset("sourcedata/images/image-v2-13/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_14.Asset("sourcedata/images/image-v2-14/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_15.Asset("sourcedata/images/image-v2-15/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	//
+	asset, err = assets_16.Asset("sourcedata/images/image-v2-16/image.jpg")
+	if err != nil {
+		return images, err
+	}
+	img, err = helper.DecodeByteToJpeg(asset)
+	if err != nil {
+		return images, err
+	}
+	images = append(images, img)
+
+	return images, nil
+}
