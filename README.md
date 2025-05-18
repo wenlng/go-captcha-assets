@@ -1,4 +1,4 @@
-# Golang Assets File of Captcha
+# Golang Assets File Of GoCaptcha
 Go Captcha presets some default embedded resources and stores them in the Go file format. In addition, you can also configure the captcha according to your own needs.
 
 Source Resources File: https://github.com/wenlng/go-captcha-resources
@@ -26,6 +26,15 @@ import "github.com/wenlng/go-captcha-assets/bindata/chars"
 
 func Demo() {
     chars := chars.GetAlphaChars()
+}
+```
+
+### Alpha Mixin Text Assets
+```go
+import "github.com/wenlng/go-captcha-assets/bindata/chars"
+
+func Demo() {
+    chars := chars.GetMixinAlphaChars()
 }
 ```
 
