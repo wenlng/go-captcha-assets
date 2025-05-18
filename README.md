@@ -53,10 +53,10 @@ func Demo() {
 ### Image Assets
 ```go
 //import "github.com/wenlng/go-captcha-assets/resources/images"
-import "github.com/wenlng/go-captcha-assets/resources/images_v2"
+import "github.com/wenlng/go-captcha-assets/resources/imagesv2"
 
 func Demo() {
-    imgs, err := images.GetImages()
+    imgs, err := imagesv2.GetImages()
     if err != nil {
         log.Fatalln(err)
     }
